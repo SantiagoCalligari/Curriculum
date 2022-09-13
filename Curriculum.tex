@@ -1,0 +1,230 @@
+%-------------------------
+
+% Resume in Latex
+
+% Author : Abhishek Niranjan
+
+% Shamelessly copied from https://github.com/sb2nov/resume
+
+%------------------------
+
+
+
+\documentclass[letterpaper,11pt]{article}
+
+
+
+
+\usepackage{latexsym}
+
+\usepackage[empty]{fullpage}
+
+\usepackage{titlesec}
+
+\usepackage{marvosym}
+
+\usepackage[usenames,dvipsnames]{color}
+
+\usepackage{verbatim}
+
+\usepackage{enumitem}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage[english]{babel}
+
+
+
+\pagestyle{fancy}
+
+\fancyhf{} % clear all header and footer fields
+
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+% Adjust margins
+
+\addtolength{\oddsidemargin}{-0.5in}
+
+\addtolength{\evensidemargin}{-0.5in}
+
+\addtolength{\textwidth}{1in}
+
+\addtolength{\topmargin}{-0.7in}
+
+\addtolength{\textheight}{1.0in}
+
+
+
+\urlstyle{same}
+
+
+
+\raggedbottom
+
+\raggedright
+
+\setlength{\tabcolsep}{0in}
+
+
+
+% Sections formatting
+
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+%-------------------------
+
+% Custom commands
+
+\newcommand{\resumeItem}[2]{
+	%\setlength{\itemindent}{-2.5ex}
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-3pt}}
+	}
+}
+
+\newcommand{\resumeItemx}[2]{
+	%\setlength{\itemindent}{-2.5ex}
+	\item\small{
+		\textbf{#1}{#2 \vspace{-3pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubheadingSingle}[2]{
+	\vspace{2pt}
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-6pt}
+}
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+\newcommand{\resumeSubItemx}[2]{\resumeItemx{#1}{#2}\vspace{-5pt}}
+
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+	
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-16pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-4pt}}
+	
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
+
+
+
+%-------------------------------------------
+
+%-------------------------------------------
+
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\begin{document}
+	
+	
+	
+	%----------HEADING-----------------
+	
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\href{calligari.ar}{\Large Santiago Calligari}} & Email: \href{mailto:carlossantiago@calligari.ar}{carlossantiago@calligari.ar}\\
+		\href{http://github.com/SantiagoCalligari/}{\color {blue} \underline {github.com/SantiagoCalligari}}
+	\end{tabular*}
+	\vspace{-2ex}
+	
+	%-----------EDUCATION-----------------
+	\section{Educación}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Instituto Politécnico Superior(IPS)}{Rosario, Santa Fe, Argentina}
+	{Técnico en Informática Personal y Profesional}{2017 -- 2022}
+	\vspace{-1.2ex}
+	%     \resumeSubheading
+	%       {Kendriya Vidyalaya}{Jodhpur, India}
+	%       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
+	\resumeSubHeadingListEnd
+	
+	
+	
+	
+	
+	%-----------EXPERIENCE-----------------
+	
+	%\section{Experiencia}
+	%\resumeSubHeadingListStart
+	%\resumeSubheading
+	%{Observe.ai}{Bangalore, India}
+	%{Machine Learning Engineer}{Dec 2020 - Present}
+	%\resumeItemListStart
+	%\resumeItemx{}
+	%{Observe provides ML driven services which include analyzing interactions, %evaluating performance, and coaching to the contact center workforce.}
+	
+	%\resumeItemListEnd
+	%\resumeSubheadingSingle{Technologies: REST Framework (Falcon, Gunicorn), %Docker, AWS ECS, AWS SQS, AWS Sagemaker, Apache Airflow}{}
+	%\vspace{-4.5mm}
+	
+	
+	%--------SKILLS------------
+	
+	 \section{Habilidades}
+	     \vspace{2mm}
+	     	\resumeItemListStart
+	     		\resumeItemx{}
+	     			{Conocimientos avanzados en C, \LaTeX, Python, PHP, SQL y Haskell}
+	     		\resumeItemx{}
+	     			{Conocimientos avanzados en administración de bases de datos, uso de datos dinámicos y gestión de memoria}
+	     		\resumeItemx{}{Inglés Avanzado. C1 \href{https://www.efset.org/cert/j69k8b}{\color{blue}\underline{Certificado por EFSET}}}
+	     		\resumeItemx{}{Manejo de microcontroladores y desarrollo de Software para los mismos}
+	     		\resumeItemx{}{Conocimientos avanzados en Administración, Instalación y Mantenimiento de redes locales}
+	     		\resumeItemx{}{Amplia experiencia en instalación de cableado estructurado}
+	     	\resumeItemListEnd
+	
+	%-----------PROJECTS-----------------
+	\vspace{1mm}
+	\section{Proyectos}
+	\resumeSubHeadingListStart
+	% \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
+	%   {Focused on studying how the popularity of different tasks and techniques related to NLP Research emerges/varies with time as a part of Master's Thesis.}
+	\resumeSubItem{\href{https://github.com/SantiagoCalligari/SinGeneratorOnRaspPico}{Generador de Senos en Microcontroladores}}
+	{Un proyecto libre acerca de generar ondas sinusoidales en una placa de desarrollo rp2040}
+	\resumeSubItem{\href{calligari.ar/LaMerendola}{Página Web}}{Un proyecto de página web utilizando PHP, SQL y Javascript}
+	\resumeSubHeadingListEnd
+	
+	
+	\vspace{1mm}
+	
+	
+	
+	
+	
+	
+	%-------------------------------------------
+	
+\end{document}
