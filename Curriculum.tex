@@ -90,23 +90,23 @@
 \newcommand{\resumeItem}[2]{
 	%\setlength{\itemindent}{-2.5ex}
 	\item\small{
-		\textbf{#1}{: #2 \vspace{-3pt}}
+		\textbf{#1}{: #2 \vspace{0.5mm}}
 	}
 }
 
 \newcommand{\resumeItemx}[2]{
 	%\setlength{\itemindent}{-2.5ex}
 	\item\small{
-		\textbf{#1}{#2 \vspace{-3pt}}
+		\textbf{#1}{#2 \vspace{0.5mm}}
 	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-	\vspace{-2pt}\item
+	\vspace{4mm}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
+		\textbf{#1} & #2 \vspace{1mm}\\
 		\textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}\vspace{-6pt}
+	\end{tabular*}\vspace{4mm}
 }
 
 \newcommand{\resumeSubheadingSingle}[2]{
@@ -118,8 +118,8 @@
 
 
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
-\newcommand{\resumeSubItemx}[2]{\resumeItemx{#1}{#2}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{2pt}}
+\newcommand{\resumeSubItemx}[2]{\resumeItemx{#1}{#2}\vspace{2pt}}
 
 
 
@@ -129,11 +129,11 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 	
-	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-16pt}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-9mm}}
 
 \newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-4pt}}
 	
-	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
 
 
 
@@ -154,10 +154,11 @@
 	%----------HEADING-----------------
 	
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{\href{calligari.ar}{\Large Santiago Calligari}} & Email: \href{mailto:carlossantiago@calligari.ar}{carlossantiago@calligari.ar}\\
-		\href{http://github.com/SantiagoCalligari/}{\color {blue} \underline {github.com/SantiagoCalligari}}
+		\textbf{\href{calligari.ar}{\Large Santiago Calligari}} & Email: \href{mailto:carlossantiago@calligari.ar}{carlossantiago@calligari.ar}\vspace{2mm}\\
+		\href{http://github.com/SantiagoCalligari/}{\color {blue}
+		\underline {github.com/SantiagoCalligari}}
 	\end{tabular*}
-	\vspace{-2ex}
+	\vspace{4mm}
 	
 	%-----------EDUCATION-----------------
 	\section{Educación}
@@ -165,7 +166,6 @@
 	\resumeSubheading
 	{Instituto Politécnico Superior(IPS)}{Rosario, Santa Fe, Argentina}
 	{Técnico en Informática Personal y Profesional}{2017 -- 2022}
-	\vspace{-1.2ex}
 	%     \resumeSubheading
 	%       {Kendriya Vidyalaya}{Jodhpur, India}
 	%       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
@@ -192,29 +192,56 @@
 	
 	
 	%--------SKILLS------------
-	
+	%Avanzado, C1: \href{https://www.efset.org/cert/j69k8b}{\color{blue}\underline{Certificado por EFSET}}}
 	 \section{Habilidades}
-	     \vspace{2mm}
-	     	\resumeItemListStart
+	     	\resumeSubHeadingListStart
+	     		\resumeSubheading{Inglés}{}{}{}
+	     		\vspace{-11.5mm}
+	     		\resumeItemListStart
 	     		\resumeItemx{}
-	     			{Conocimientos avanzados en C, \LaTeX, Python, PHP, SQL y Haskell}
+	     		{Avanzado Certificado por:\color{blue} \href{https://www.efset.org/cert/j69k8b}{\underline{EFSET}}}
+	     		\vspace{-5mm}
+	     		\resumeItemListEnd
+	     		
+	     		\resumeSubheading{Programación}{}{}{}
+	     		\vspace{-11.5mm}
+	     		\resumeItemListStart
 	     		\resumeItemx{}
-	     			{Conocimientos avanzados en administración de bases de datos, uso de datos dinámicos y gestión de memoria}
-	     		\resumeItemx{}{Inglés Avanzado. C1 \href{https://www.efset.org/cert/j69k8b}{\color{blue}\underline{Certificado por EFSET}}}
-	     		\resumeItemx{}{Manejo de microcontroladores y desarrollo de Software para los mismos}
+	     		{Conocimientos avanzados en C, Python, PHP, SQL y Haskell}
+	     		\resumeItemx{}
+	     		{Conocimientos avanzados en administración de bases de datos, uso de datos dinámicos y gestión de memoria}
+	     		\resumeItemx{}{Manejo y desarrollo de Software para microcontroladores}
+	     		\vspace{-2mm}
+	     		\resumeItemListEnd
+	     		
+	     		\resumeSubheading{Redes}{}{}{}
+	     		\vspace{-11.5mm}
+	     		\resumeItemListStart
 	     		\resumeItemx{}{Conocimientos avanzados en Administración, Instalación y Mantenimiento de redes locales}
-	     		\resumeItemx{}{Amplia experiencia en instalación de cableado estructurado}
-	     	\resumeItemListEnd
-	
+	     		\resumeItemx{}{Experiencia en instalación y mantenimiento de cableado estructurado}
+	     		
+	     		\resumeItemListEnd
+	     	\resumeSubHeadingListEnd
+	     	\vspace{4mm}
 	%-----------PROJECTS-----------------
-	\vspace{1mm}
 	\section{Proyectos}
+	\vspace{1mm}
 	\resumeSubHeadingListStart
 	% \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
 	%   {Focused on studying how the popularity of different tasks and techniques related to NLP Research emerges/varies with time as a part of Master's Thesis.}
-	\resumeSubItem{\href{https://github.com/SantiagoCalligari/SinGeneratorOnRaspPico}{Generador de Senos en Microcontroladores}}
-	{Un proyecto libre acerca de generar ondas sinusoidales en una placa de desarrollo rp2040}
-	\resumeSubItem{\href{calligari.ar/LaMerendola}{Página Web}}{Un proyecto de página web utilizando PHP, SQL y Javascript}
+	\resumeSubItem{\href{https://github.com/SantiagoCalligari/SinGeneratorOnRaspPico}{Generador de Senos en Microcontroladores}}{}
+	\resumeItemListStart
+	\vspace{-1mm}
+	\resumeItemx{}
+	{Un proyecto libre acerca de generar ondas sinusoidales en una placa de desarrollo RP2040}
+	\resumeItemListEnd
+	\resumeSubItem{\href{www.calligari.ar/LaMerendola/index.html}{Página Web}}{}
+	\vspace{-1mm}
+		\resumeItemListStart
+		\resumeItemx{}
+		{Un proyecto de página web utilizando PHP, SQL y Javascript}
+		\vspace{-5mm}
+		\resumeItemListEnd
 	\resumeSubHeadingListEnd
 	
 	
