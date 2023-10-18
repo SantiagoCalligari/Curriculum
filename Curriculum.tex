@@ -21,7 +21,6 @@
 
 \usepackage{titlesec}
 
-\usepackage{marvosym}
 
 \usepackage[usenames,dvipsnames]{color}
 
@@ -144,7 +143,7 @@
 
 
 
-
+\setlength{\footskip}{5pt}
 
 \begin{document}
 	
@@ -153,31 +152,11 @@
 	%----------HEADING-----------------
 	
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{\href{calligari.ar}{\Large Santiago Calligari}} & Email: \color {blue}{\underline{\href{mailto:carlossantiagocalligari@gmail.com}{carlossantiagocalligari@gmail.com}}}\vspace{2mm}\\
+		\textbf{\href{calligari.ar}{\Large Santiago Calligari}} & Email: \color {blue}{\underline{\href{mailto:santiago@calligari.ar}{santiago@calligari.ar}}}\vspace{2mm}\\
 		\href{http://github.com/SantiagoCalligari/}{\color {blue}
 		\underline {github.com/SantiagoCalligari}}
 	\end{tabular*}
 	\vspace{4mm}
-	
-	%-----------EDUCATION-----------------
-	\section{Educación}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-	{Universidad Nacional De Rosario(U.N.R.)}{Rosario, Santa Fe, Argentina}
-	{Licenciatura en Ciencias de la Computación}{2023 -- Actualidad}
-
-	\resumeSubheading
-	{Instituto Politécnico Superior(I.P.S.)}{Rosario, Santa Fe, Argentina}
-	{Técnico en Informática Personal y Profesional}{2017 -- 2022}
-	%     \resumeSubheading
-	%       {Kendriya Vidyalaya}{Jodhpur, India}
-	%       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
-		\resumeSubHeadingListEnd
-	\vspace{5mm}
-	
-	
-	
-	
 	
 	%-----------EXPERIENCE-----------------
 	
@@ -194,44 +173,75 @@
 	%\resumeSubheadingSingle{Technologies: REST Framework (Falcon, Gunicorn), %Docker, AWS ECS, AWS SQS, AWS Sagemaker, Apache Airflow}{}
 	%\vspace{-4.5mm}
 	
+	\section{Experiencia}
+	\resumeSubHeadingListStart  
+  \resumeSubheading{Tera}{Rosario, Argentina}{Desarrollador de Software}{2022-Actualidad}
+	\vspace{-5mm}
+  \resumeItemListStart
+	\resumeItemx{}
+  {Formé parte de un equipo de tres desarrolladores, colaborando con clientes, utilizando tecnologías como React, C, PHP, Jira y GitHub. Destacó por mejorar habilidades de comunicación y mantener un enfoque en el aprendizaje continuo.  }
+	
+	\resumeItemListEnd
+    
+	
 	
 	%--------SKILLS------------
-	%Avanzado, C1: \href{https://www.efset.org/cert/j69k8b}{\color{blue}\underline{Certificado por EFSET}}}
 	 \section{Habilidades}
 	     	\resumeSubHeadingListStart
 	     			     		
+	     		\vspace{-1mm}
 	     		\resumeSubheading{Programación}{}{}{}
 	     		\vspace{-11.5mm}
 	     		\resumeItemListStart
 	     		\resumeItemx{}
 	     		{Conocimientos avanzados en Rust, C, Python, PHP, Javascript y Haskell}
 	     		\resumeItemx{}
-	     		{Conocimientos en desarrollo web con frameworks como Yew, React y Laravel}
+	     		{Conocimientos en desarrollo web con frameworks como React y Laravel}
 	     		\resumeItemx{}
 	     		{Conocimientos avanzados en administración de bases de datos, uso de datos dinámicos y gestión de memoria}
 	     		\resumeItemx{}{Manejo y desarrollo de Software para microcontroladores}
 	     		\vspace{-2mm}
 	     		\resumeItemListEnd
 	     		
+	     		\vspace{-5mm}
 	     		\resumeSubheading{Redes}{}{}{}
 	     		\vspace{-11.5mm}
 	     		\resumeItemListStart
 	     		\resumeItemx{}{Conocimientos avanzados en Administración, Instalación y Mantenimiento de redes locales}
 	     		\resumeItemx{}{Experiencia en instalación y mantenimiento de cableado estructurado}
 	     		
+	     		\vspace{-5mm}
 	     		\resumeItemListEnd
 	     		\resumeSubheading{Inglés}{}{}{}
 	     		\vspace{-11.5mm}
 	     		\resumeItemListStart
 	     		\resumeItemx{}
-	     		{Avanzado Certificado por:\color{blue} \href{https://www.efset.org/cert/j69k8b}{\underline{EFSET}}}
+	     		{Avanzado Certificado por:  \color{blue} \href{https://www.efset.org/cert/j69k8b}{\underline{EFSET}}}
 	     		\vspace{-5mm}
 	     		\resumeItemListEnd
 
 	     	\resumeSubHeadingListEnd
 	     	\vspace{10mm}
+	%-----------EDUCATION-----------------
+	\section{Educación}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Universidad Nacional De Rosario(U.N.R.)}{Rosario, Santa Fe, Argentina}
+	{Licenciatura en Ciencias de la Computación}{2023 -- Actualidad}
+
+	\vspace{-10mm}
+	\resumeSubheading
+	{Instituto Politécnico Superior(I.P.S.)}{Rosario, Santa Fe, Argentina}
+	{Técnico en Informática Personal y Profesional}{2017 -- 2022}
+	%     \resumeSubheading
+	%       {Kendriya Vidyalaya}{Jodhpur, India}
+	%       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
+		\resumeSubHeadingListEnd
+	\vspace{5mm}
 	%-----------PROJECTS-----------------
-	\section{Proyectos}
+	
+	
+  \section{Proyectos}
 	\vspace{7mm}
 	\resumeSubHeadingListStart
 	% \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
@@ -249,17 +259,17 @@
 		\resumeItemListStart
 		\resumeItemx{}
 		{Herramienta CLI que, dado un usuario muestra todos sus repositorios de github y dado un repositorio muestra todos sus forks}
-		\vspace{-5mm}
+		\resumeItemListEnd
+  \vspace{4mm}
+	\resumeSubItem{\color{blue}{\underline{\href{https://github.com/SantiagoCalligari/multimove}{MultiMove}}}}{}
+	\vspace{-1mm}
+		\resumeItemListStart
+		\resumeItemx{}
+		{Implementación de GNU parallel escrita en Rust, usa todos los Núcleos del procesador para mover archivos}
 		\resumeItemListEnd
 	\resumeSubHeadingListEnd
 	
-	
 	\vspace{1mm}
-	
-	
-	
-	
-	
 	
 	%-------------------------------------------
 	
