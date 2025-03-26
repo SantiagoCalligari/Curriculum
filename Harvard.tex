@@ -1,0 +1,115 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{geometry}
+
+% Harvard-style margins
+\geometry{
+    left=2.54cm,
+    right=2.54cm,
+    top=2.54cm,
+    bottom=2.54cm
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting with Harvard-style headings
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands with more professional formatting
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}: #2
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{4mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{4mm}
+}
+
+\newcommand{\achievementItem}[1]{
+    \item\small{#1}
+}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Santiago Calligari} & \href{mailto:santiago@calligari.ar}{santiago@calligari.ar} \\
+    \href{https://github.com/SantiagoCalligari/}{GitHub: SantiagoCalligari} & +54 (PHONE NUMBER)
+\end{tabular*}
+
+\section{Professional Summary}
+Motivated and versatile Software Developer with a strong background in computer science, specializing in full-stack development, systems programming, and network technologies. Proven track record of delivering innovative solutions using diverse programming languages and frameworks.
+
+\section{Professional Experience}
+\begin{itemize}[leftmargin=*]
+    \resumeSubheading
+    {Tera}{Rosario, Argentina}
+    {Software Developer}{2022 -- Present}
+    \begin{itemize}
+        \achievementItem{Collaborated in a cross-functional team of three developers, delivering client-focused software solutions}
+        \achievementItem{Utilized technologies including React, C, PHP, Jira, and GitHub to develop robust web applications}
+        \achievementItem{Demonstrated strong communication skills and commitment to continuous professional development}
+    \end{itemize}
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+    \resumeItem{Programming Languages}{C, Rust, Python, PHP, JavaScript}
+    \resumeItem{Web Frameworks}{React, Laravel}
+    \resumeItem{Database Management}{Relational Database Administration, Dynamic Data Utilization}
+    \resumeItem{Core Competencies}{Object-Oriented Programming, Memory Management, Network Administration}
+\end{itemize}
+
+\section{Network and Infrastructure Skills}
+\begin{itemize}[leftmargin=*]
+    \achievementItem{Advanced expertise in Local Area Network (LAN) design, implementation, and maintenance}
+    \achievementItem{Proficient in structured cabling installation and network infrastructure optimization}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=*]
+    \resumeSubheading
+    {Universidad Nacional De Rosario (U.N.R.)}{Rosario, Argentina}
+    {Bachelor's Degree in Computer Science}{2023 -- Present}
+
+    \resumeSubheading
+    {Instituto Politécnico Superior (I.P.S.)}{Rosario, Argentina}
+    {Technical Degree in Personal and Professional Informatics}{2017 -- 2022}
+\end{itemize}
+
+\section{Professional Certifications}
+\begin{itemize}[leftmargin=*]
+    \achievementItem{B2 English Proficiency Certification - EFSET}
+\end{itemize}
+
+\section{Notable Projects}
+\begin{itemize}[leftmargin=*]
+    \resumeItem{GarchLinux}{Linux distribution based on Arch Linux, demonstrating system configuration and customization skills}
+    \resumeItem{GitGet}{CLI tool for GitHub repository management, showcasing practical development and scripting abilities}
+    \resumeItem{MultiMove}{Rust-based parallel file movement utility utilizing multi-core processing}
+\end{itemize}
+
+\end{document}
