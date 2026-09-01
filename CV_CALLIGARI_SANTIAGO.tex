@@ -1,276 +1,151 @@
 %-------------------------
+% CV — Santiago Calligari (Español)
+% Enfoque: Infraestructura / DevOps / SysAdmin
+%-------------------------
 
-% Resume in Latex
+\documentclass[letterpaper,10pt]{article}
 
-% Author : Abhishek Niranjan
-
-% Shamelessly copied from https://github.com/sb2nov/resume
-
-%------------------------
-
-
-
-\documentclass[letterpaper,11pt]{article}
-
-
-
-
+\usepackage{charter}
 \usepackage{latexsym}
-
 \usepackage[empty]{fullpage}
-
 \usepackage{titlesec}
-
-
 \usepackage[usenames,dvipsnames]{color}
-
 \usepackage{verbatim}
-
 \usepackage{enumitem}
-
 \usepackage[hidelinks]{hyperref}
-
 \usepackage{fancyhdr}
-
-\usepackage[english]{babel}
-
-
+\usepackage[spanish,es-noshorthands]{babel}
 
 \pagestyle{fancy}
-
-\fancyhf{} % clear all header and footer fields
-
+\fancyhf{}
 \fancyfoot{}
-
 \renewcommand{\headrulewidth}{0pt}
-
 \renewcommand{\footrulewidth}{0pt}
 
-
-
 % Adjust margins
-
-\addtolength{\oddsidemargin}{-0.5in}
-
-\addtolength{\evensidemargin}{-0.5in}
-
-\addtolength{\textwidth}{1in}
-
-\addtolength{\topmargin}{-0.7in}
-
-\addtolength{\textheight}{1.0in}
-
-
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{0.75in}
 
 \urlstyle{same}
 
-
-
 \raggedbottom
-
 \raggedright
-
 \setlength{\tabcolsep}{0in}
 
-
-
 % Sections formatting
-
 \titleformat{\section}{
 	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-
-
 %-------------------------
-
 % Custom commands
-
 \newcommand{\resumeItem}[2]{
-	%\setlength{\itemindent}{-2.5ex}
 	\item\small{
 		\textbf{#1}{: #2 \vspace{0.5mm}}
 	}
 }
 
 \newcommand{\resumeItemx}[2]{
-	%\setlength{\itemindent}{-2.5ex}
 	\item\small{
 		\textbf{#1}{#2 \vspace{0.5mm}}
 	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-	\vspace{4mm}\item
+	\vspace{0.5mm}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \vspace{1mm}\\
+		\textbf{#1} & #2 \vspace{0.5mm}\\
 		\textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}\vspace{4mm}
+	\end{tabular*}\vspace{0.5mm}
 }
 
-\newcommand{\resumeSubheadingSingle}[2]{
-	\vspace{2pt}
-	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textit{\small#1} & \textit{\small #2} \\
-	\end{tabular*}\vspace{-6pt}
-}
-
-
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{2pt}}
-\newcommand{\resumeSubItemx}[2]{\resumeItemx{#1}{#2}\vspace{2pt}}
-
-
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{1pt}}
+\newcommand{\resumeSubItemx}[2]{\resumeItemx{#1}{#2}\vspace{1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-	
-	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-9mm}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4mm}}
 
-\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-2pt}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
 
-
-
 %-------------------------------------------
-
-%-------------------------------------------
-
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 \setlength{\footskip}{5pt}
 
 \begin{document}
-	
-	
-	
-	%----------HEADING-----------------
-	
-	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{\href{calligari.ar}{\Large Santiago Calligari}} & Email: \color {blue}{\underline{\href{mailto:santiago@calligari.ar}{santiago@calligari.ar}}}\vspace{2mm}\\
-		\href{http://github.com/SantiagoCalligari/}{\color {blue}
-		\underline {github.com/SantiagoCalligari}}
-	\end{tabular*}
-	\vspace{4mm}
-	
-	%-----------EXPERIENCE-----------------
-	
-	%\section{Experiencia}
-	%\resumeSubHeadingListStart
-	%\resumeSubheading
-	%{Observe.ai}{Bangalore, India}
-	%{Machine Learning Engineer}{Dec 2020 - Present}
-	%\resumeItemListStart
-	%\resumeItemx{}
-	%{Observe provides ML driven services which include analyzing interactions, %evaluating performance, and coaching to the contact center workforce.}
-	
-	%\resumeItemListEnd
-	%\resumeSubheadingSingle{Technologies: REST Framework (Falcon, Gunicorn), %Docker, AWS ECS, AWS SQS, AWS Sagemaker, Apache Airflow}{}
-	%\vspace{-4.5mm}
-	
-	\section{Experiencia}
-	\resumeSubHeadingListStart  
-  \resumeSubheading{Tera}{Rosario, Argentina}{Desarrollador de Software}{2022-Actualidad}
-	\vspace{-5mm}
-  \resumeItemListStart
-	\resumeItemx{}
-  {Formé parte de un equipo de tres desarrolladores, colaborando con clientes, utilizando tecnologías como React, C, PHP, Jira y GitHub. Destacó por mejorar habilidades de comunicación y mantener un enfoque en el aprendizaje continuo.  }
-	
-	\resumeItemListEnd
-    
-	
-	
-	%--------SKILLS------------
-	 \section{Habilidades}
-	     	\resumeSubHeadingListStart
-	     			     		
-	     		\vspace{-1mm}
-	     		\resumeSubheading{Programación}{}{}{}
-	     		\vspace{-11.5mm}
-	     		\resumeItemListStart
-	     		\resumeItemx{}
-	     		{Conocimientos avanzados en Rust, C, Python, PHP, Javascript y Haskell}
-	     		\resumeItemx{}
-	     		{Conocimientos en desarrollo web con frameworks como React y Laravel}
-	     		\resumeItemx{}
-	     		{Conocimientos avanzados en administración de bases de datos, uso de datos dinámicos y gestión de memoria}
-	     		\resumeItemx{}{Manejo y desarrollo de Software para microcontroladores}
-	     		\vspace{-2mm}
-	     		\resumeItemListEnd
-	     		
-	     		\vspace{-5mm}
-	     		\resumeSubheading{Redes}{}{}{}
-	     		\vspace{-11.5mm}
-	     		\resumeItemListStart
-	     		\resumeItemx{}{Conocimientos avanzados en Administración, Instalación y Mantenimiento de redes locales}
-	     		\resumeItemx{}{Experiencia en instalación y mantenimiento de cableado estructurado}
-	     		
-	     		\vspace{-5mm}
-	     		\resumeItemListEnd
-	     		\resumeSubheading{Inglés}{}{}{}
-	     		\vspace{-11.5mm}
-	     		\resumeItemListStart
-	     		\resumeItemx{}
-	     		{Avanzado Certificado por:  \color{blue} \href{https://www.efset.org/cert/j69k8b}{\underline{EFSET}}}
-	     		\vspace{-5mm}
-	     		\resumeItemListEnd
 
-	     	\resumeSubHeadingListEnd
-	     	\vspace{10mm}
-	%-----------EDUCATION-----------------
-	\section{Educación}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-	{Universidad Nacional De Rosario(U.N.R.)}{Rosario, Santa Fe, Argentina}
-	{Licenciatura en Ciencias de la Computación}{2023 -- Actualidad}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{https://calligari.ar}{\Large Santiago Calligari}} & Rosario, Santa Fe, Argentina \vspace{1mm}\\
+	\href{mailto:santiago@calligari.ar}{\underline{santiago@calligari.ar}} & +54 9 341 227-0326 \\
+	\href{https://calligari.ar}{\underline{calligari.ar}} &
+	\href{https://github.com/SantiagoCalligari/}{\underline{github.com/SantiagoCalligari}}
+\end{tabular*}
+\vspace{1mm}
 
-	\vspace{-10mm}
-	\resumeSubheading
-	{Instituto Politécnico Superior(I.P.S.)}{Rosario, Santa Fe, Argentina}
-	{Técnico en Informática Personal y Profesional}{2017 -- 2022}
-	%     \resumeSubheading
-	%       {Kendriya Vidyalaya}{Jodhpur, India}
-	%       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
-		\resumeSubHeadingListEnd
-	\vspace{5mm}
-	%-----------PROJECTS-----------------
-	
-	
-  \section{Proyectos}
-	\vspace{7mm}
-	\resumeSubHeadingListStart
-	% \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
-	%   {Focused on studying how the popularity of different tasks and techniques related to NLP Research emerges/varies with time as a part of Master's Thesis.}
-	\resumeSubItem{\color{blue}{\underline{\href{https://www.garchlinux.ar}{GarchLinux}}}}{}
-	\resumeItemListStart
-	\vspace{-1mm}
-	\resumeItemx{}
-	{Una distribucion de linux creada con archiso como proyecto de verano}
-	\resumeItemListEnd
+%-----------PROFILE-----------------
+\section{Perfil Profesional}
+\small{Administrador de sistemas Linux con más de 5 años de experiencia gestionando infraestructura de hosting para más de 30 clientes y 50 sitios web. Perfil técnico generalista con base sólida en Linux y redes: automatización, contenedores, correo corporativo, monitoreo y desarrollo de software.}
+\vspace{1mm}
 
-	\vspace{4mm}
-	\resumeSubItem{\color{blue}{\underline{\href{https://github.com/SantiagoCalligari/gitget}{GitGet}}}}{}
-	\vspace{-1mm}
-		\resumeItemListStart
-		\resumeItemx{}
-		{Herramienta CLI que, dado un usuario muestra todos sus repositorios de github y dado un repositorio muestra todos sus forks}
-		\resumeItemListEnd
-  \vspace{4mm}
-	\resumeSubItem{\color{blue}{\underline{\href{https://github.com/SantiagoCalligari/multimove}{MultiMove}}}}{}
-	\vspace{-1mm}
-		\resumeItemListStart
-		\resumeItemx{}
-		{Implementación de GNU parallel escrita en Rust, usa todos los Núcleos del procesador para mover archivos}
-		\resumeItemListEnd
-	\resumeSubHeadingListEnd
-	
-	\vspace{1mm}
-	
-	%-------------------------------------------
-	
+%--------SKILLS------------
+\section{Habilidades}
+\resumeSubHeadingListStart
+\resumeItem{Infraestructura}{Administración de servidores Linux (Debian, Ubuntu, Arch); automatización con Ansible; contenedores Podman (OCI, compatible con Docker); Traefik, Nginx, Apache; Cloudflare (DNS, CDN, WAF); Tailscale; Grafana y Prometheus; AWS (S3); TLS con Let's Encrypt; hosting de WordPress, Joomla, Node.js y Odoo; redes LAN y cableado estructurado}
+\resumeItem{Programación}{Bash, Python, PHP, Rust, C, JavaScript, Haskell; MariaDB/MySQL y PostgreSQL; Git y GitHub; desarrollo web con React y Laravel; software para microcontroladores}
+\resumeItem{Idiomas}{Español (nativo), Inglés (B2 -- certificado \href{https://www.efset.org/cert/j69k8b}{\underline{EFSET}})}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experiencia}
+\resumeSubHeadingListStart
+\resumeSubheading{Cooperativa de Trabajo Tera Ltda.}{Rosario, Argentina}{Socio -- Administrador de Sistemas e Infraestructura}{2020 -- Actualidad}
+\resumeItemListStart
+\resumeItemx{}{Administración integral de la infraestructura de hosting de más de 30 clientes y 50 sitios web (WordPress, Joomla y otros CMS) sobre 5 VPS Linux (Debian/Ubuntu): provisión, hardening, mantenimiento y migraciones.}
+\resumeItemx{}{Proveedor de infraestructura y hosting de \textbf{Grupo Ayudín}: servidores, sitios web, mantenimiento y soporte técnico.}
+\resumeItemx{}{Automatización de la provisión, el hardening y el despliegue de servidores con Ansible.}
+\resumeItemx{}{Aplicaciones en contenedores Podman detrás de Traefik (proxy inverso con TLS automático); DNS, CDN y WAF en Cloudflare; VPN mesh con Tailscale.}
+\resumeItemx{}{Correo corporativo para 40 clientes: migraciones y entregabilidad (SPF, DKIM, DMARC).}
+\resumeItemx{}{Monitoreo con Grafana y Prometheus; backups automatizados con copias externas en AWS S3.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ENTREPRENEURSHIP-----------------
+\section{Emprendimiento}
+\resumeSubHeadingListStart
+\resumeSubheading{Empresa del sector electrónico}{Rosario, Argentina}{Fundador y Responsable Técnico}{}
+\resumeItemListStart
+\resumeItemx{}{Facturación de USD 50.000 en 2025; responsable de la dirección técnica y la operación integral del negocio.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Proyecto Personal}
+\resumeSubHeadingListStart
+\resumeSubItem{Home Lab}{Infraestructura personal de servicios autoalojados: contenedores Podman (Immich), DDNS, almacenamiento en AWS S3 y red privada con Tailscale}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Educación y Certificaciones}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Universidad Nacional de Rosario (U.N.R.)}{Rosario, Santa Fe, Argentina}
+{Licenciatura en Ciencias de la Computación -- tercer año en curso}{2023 -- Actualidad}
+\resumeSubheading
+{Instituto Politécnico Superior (I.P.S.)}{Rosario, Santa Fe, Argentina}
+{Técnico en Informática Personal y Profesional}{2017 -- 2022}
+\resumeItemx{}{\textbf{En preparación:} AWS Certified Cloud Practitioner (2026)}
+\resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------------
+\section{Intereses}
+\small{Electrónica, lectura y software de código abierto.}
+
+%-------------------------------------------
 \end{document}
